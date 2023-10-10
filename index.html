@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>sistam</title>
+</head>
+
+<body class="bg-dark">
+    <div class="container">
+
+        <div class="text-center mt-3 text-light">
+            <h1> phon</h1>
+            <p>creat read update delete search</p>
+        </div>
+
+        <div class="input">
+            <input class="m-2" type="text" placeholder=" title" id="title">
+
+            <div class="price">
+                <input onkeyup="getTotal()" class="m-2" type="number" placeholder="price" id="price">
+                <input onkeyup="getTotal()" class="m-2" type="number" placeholder="taxes" id="taxes">
+                <input onkeyup="getTotal()" class="m-2" type="number" placeholder="ads" id="ads">
+                <input onkeyup="getTotal()" class="m-2" type="number" placeholder="discount" id="discount">
+                <small id="total"></small>
+            </div>
+            <input class="m-2" type="number" placeholder="count" id="count">
+            <input class="m-2" type="text" placeholder="category" id="category">
+            <button onclick=" showData() " , id="submat" class="btn">create</button>
+
+        </div>
+
+
+
+        <div class="utputs">
+            <input onkeyup="searchdata(this.value)" class="w-100" type="text" placeholder="search" id="search">
+            <div class="search">
+                <button onclick="getsearch (this.id) " , id="searchtitle" class="btn">search by title</button>
+                <button onclick=" getsearch (this.id)" , id="searchcategory" class="btn">search by category</button>
+            </div>
+
+
+            <div class="deleteAll ">
+
+            </div>
+
+
+
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+    </div>
+
+
+    </div>
+
+
+    </div>
+
+
+
+
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="java.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+
+input{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #222;
+    outline: none;
+    color: #fff;
+  }
+  
+  input:focus{
+      background-color: #000;
+      transform: scale(1.1);
+  }
+  
+  .price input{
+      width: 20%;
+  }
+  
+  #total{
+  background-color: #9d0505;
+  padding: 5px;
+  border-radius: 7px;
+  
+  }
+  #total::before{
+      content: 'Total:  ';
+  }
+  
+  .btn{
+  
+      background-color: #800589;
+      color: #fff;
+      border-radius: 30px;
+      width: 100%;
+      margin: 10px;
+      border: none;
+      outline: none;
+  
+  
+  }
+  .btn:hover{
+      background-color: #680270;
+  }
+
+  .search{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .search button{
+    width: 50%;
+  }
+
+  table{
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    color: #fff;
+  }
+  table th {
+
+    text-transform:uppercase ;
+  }
+  th,td{
+    padding: 5px;
+  }
